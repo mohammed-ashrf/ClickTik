@@ -1,0 +1,144 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img {
+    width: 48px;
+    height: 48px;
+}
+
+.header .login-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-text .text {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    color: #101828;
+    margin: 0;
+    padding: 0;
+}
+
+.login-text .supporting-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+}
+
+.content form{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.email label {
+    width: 36px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #344054;
+}
+.email {
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+}
+.email input {
+    width: 100%;
+    border-width: 1px;
+    border-color: #D0D5DD;
+    border-radius: 8px;
+    padding: 10px 14px 10px 14px;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+}
+.password label {
+    width: 66px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #344054;
+}
+.password input {
+    width: 100%;
+    border-width: 1px;
+    border-radius: 8px;
+    border-color: #D0D5DD;
+    padding: 10px 14px 10px 14px;
+}
+
+input::placeholder {
+    width: 332px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+}
+
+/* For WebKit browsers */
+input::-webkit-input-placeholder {
+    width: 332px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+}
+
+/* For Firefox */
+input::-moz-placeholder {
+    width: 332px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+}
+
+/* For Edge */
+input:-ms-input-placeholder {
+    width: 332px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+}
+
+/* For Internet Explorer 10-11 */
+input:-ms-input-placeholder {
+    width: 332px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+}
+
+#sign-in {
+    width: 360px;
+    height: 44px;
+    border-width: 1px;
+    border-radius: 8px;
+    padding: 10px 18px 10px 18px;
+    background-color: #41cccc;
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    background-color:#ffffff;
+    align-items: center;
+    height: 80px;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+}
+.container .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.navigation .button {
+    color: #667085;
+    size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#login {
+    color: #667085;
+    cursor: pointer;
+}

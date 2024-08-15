@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    background-color:#1D2939;
+    position: absolute;
+    bottom: 0;
+    padding: 48px 0px 48px 0px;
+}
+
+.container .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+
+.logo p {
+    color: #ffffff;
+}
+
+.footer-text p {
+    color: #98A2B3;
+}

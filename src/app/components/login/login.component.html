@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="header">
+        <img src="assets/logo.svg" alt="logo">
+        <div class="login-text">
+            <p class="text">Log In to your account</p>
+            <p class="supporting-text">Welcome back! Please enter your details.</p>
+        </div>
+    </div>
+    <div class="content">
+        <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="Enter your Username" id="email-input" formControlName="username">
+            </div>
+            <div class="password">
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="••••••••" id="password-input" formControlName="password">
+            </div>
+            <button type="submit" id="sign-in">Sign in</button>
+        </form>
+    </div>
+</div>
