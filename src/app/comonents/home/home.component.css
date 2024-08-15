@@ -3,6 +3,7 @@
     flex-direction: column;
     max-width: 70vw;
     margin: auto;
+    margin-top: 80px;
 }
 
 .navigation {
@@ -17,8 +18,20 @@
 }
 
 .breadcrumbs p {
+    font-family: Inter;
     font-size: 14px;
-    color: #6c757d;
+    color: #1E1E1E;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.78px;
+}
+
+.breadcrumbs .searchQuery-span {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.78px;
+    color: #1E1E1E;
 }
 
 .content {
@@ -57,7 +70,30 @@
 .category label {
     font-size: 14px;
 }
-
+.search-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    margin: 22px;
+}
+.search-filter .sort-by {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.94px;
+    color: #1E1E1E;
+}
+.search-filter .sort-by select{
+    appearance: none;
+    border: none;
+    outline: none;
+    color: #1E1E1E;
+}
+.search-filter .sort-by select option {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.94px;
+    color: #1E1E1E;
+}
 .products {
     flex: 1;
 }
@@ -65,7 +101,7 @@
 .product-list {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -223,4 +259,3 @@ button[disabled] {
     cursor: not-allowed;
     opacity: 0.6;
 }
-

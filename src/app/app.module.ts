@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './comonents/footer/footer.component';
 import { HeaderComponent } from './comonents/header/header.component';
 import { LoginComponent } from './comonents/login/login.component';
+import { HomeComponent } from './comonents/home/home.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { HomeComponent } from './comonents/home/home.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { HomeComponent } from './comonents/home/home.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

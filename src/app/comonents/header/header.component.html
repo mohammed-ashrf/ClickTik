@@ -9,11 +9,11 @@
         </div>
     </div>
     <div class="navigation-actions">
-        <div class="search">
-            <input type="text" name="search" placeholder="Search" id="search-input">
+        <div class="search" *ngIf="isAuth">
+            <input type="text" name="search" [(ngModel)]="searchQuery" placeholder="Search" id="search-input" (keydown.enter)="onSearch()">
         </div>
-        <div class="cart">
-            <div class="cart-item-numbers"><span>{{cartItemNumbers}}</span></div>
+        <div class="cart" *ngIf="isAuth">
+            <div class="cart-item-numbers"><span>{{cartItems}}</span></div>
             <img src="assets/cart.svg" alt="cart-svg">
         </div>
         <a id="login" *ngIf="!isAuth">Log in</a>
