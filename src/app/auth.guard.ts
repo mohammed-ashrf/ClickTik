@@ -14,6 +14,7 @@ export const canActivate: CanActivateFn = () => {
       if (isAuthenticated) {
         return true;
       } else {
+        authService.logout();
         router.navigate(['/login']);
         return false;
       }
@@ -30,6 +31,7 @@ export const canMatch: CanMatchFn = () => {
       if (isAuthenticated) {
         return true;
       } else {
+        authService.logout();
         router.navigate(['/login']);
         return false;
       }
