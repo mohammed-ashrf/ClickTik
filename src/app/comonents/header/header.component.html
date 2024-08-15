@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <img src="assets/logo.svg" alt="logo">
+            <p>ClickTik</p>
+        </div>
+        <div class="navigation">
+            <a class="button" routerLink="/home">Home</a>
+        </div>
+    </div>
+    <div class="navigation-actions">
+        <div class="search">
+            <input type="text" name="search" placeholder="Search" id="search-input">
+        </div>
+        <div class="cart">
+            <div class="cart-item-numbers"><span>{{cartItemNumbers}}</span></div>
+            <img src="assets/cart.svg" alt="cart-svg">
+        </div>
+        <a id="login" *ngIf="!isAuth">Log in</a>
+        <a id="account" *ngIf="isAuth">Account</a>
+    </div>
+</div>
