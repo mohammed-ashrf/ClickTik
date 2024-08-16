@@ -132,7 +132,7 @@ export class HomeComponent implements OnInit{
     }
   }
 
-  addTOCart() {
+  addTOCart(product : any) {
     let cartProducts = window.localStorage.getItem('cartProducts');
     let cartCount = 0;
     if (cartProducts) {
@@ -143,5 +143,6 @@ export class HomeComponent implements OnInit{
     }
     window.localStorage.setItem('cartProducts', cartCount.toString());
     this.productsService.setnumberOfCartProducts(cartCount);
+    console.log(product);
   }
 }

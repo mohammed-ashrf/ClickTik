@@ -35,6 +35,9 @@
             <div class="product-list">
                 <div *ngFor="let product of products" class="product-item">
                     <div class="details">
+                        <div class="discount-percentage">
+                            <span>- {{ product.discountPercentage }}%</span>
+                        </div>
                         <img [src]="product.thumbnail" [alt]="product.description" />
                         <h3>{{ product.title }}</h3>
                         <p>{{ product.description }}</p>
@@ -56,7 +59,7 @@
                             <p class="rating-number">{{ product.rating }}</p>
                             <p class="reviews">({{ product.reviews.length }})</p>
                         </div>
-                        <button class="add-to-cart" (click)="addTOCart()">ADD TO CART</button>
+                        <button class="add-to-cart" (click)="addTOCart(product)">ADD TO CART</button>
                     </div>
                 </div>
             </div>
