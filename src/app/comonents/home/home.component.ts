@@ -11,12 +11,14 @@ export class HomeComponent implements OnInit{
   currentPage: number = 1;
   pageSize: number = 9;
   totalItems: number = 0;
+  allProducts: number = 0;
   categories: any[] = [];
   selectedCategory: string | null = null;
   pageNumbers: (number | string)[] = [];
   searchQuery: string | null = null;
   sortBy: string = 'title';
   sortOrder: 'asc' | 'desc' = 'asc';
+  categoryCounts: { [key: string]: number } = {};
 
   constructor(private productsService: ProductsService,private searchService: SearchService){}
 
@@ -29,6 +31,7 @@ export class HomeComponent implements OnInit{
     });
     this.loadProducts();
     this.productsService.setnumberOfCartProducts(Number(window.localStorage.getItem('cartProducts')));
+    this.getAllProducts();
   }
 
   loadProducts(): void {
@@ -45,9 +48,27 @@ export class HomeComponent implements OnInit{
       this.productsService.getProducts(this.currentPage, this.pageSize).subscribe(data => {
         this.products = data.products;
         this.totalItems = data.total;
+        this.allProducts = data.total;
         this.updatePageNumbers();
       });
     }
+  }
+
+  getAllProducts(){
+    this.productsService.getProducts(1,0).subscribe(
+      (allProducts) => {
+        this.categoryCounts = this.countCategories(allProducts.products);
+      }
+    )
+  }
+
+  countCategories(products: any[]): { [key: string]: number } {
+    const counts: { [key: string]: number } = {};
+    products.forEach(product => {
+      const category = product.category;
+      counts[category] = (counts[category] || 0) + 1;
+    });
+    return counts;
   }
 
   searchProduct(query: string, sortBy: string = 'title', sortOrder: 'asc' | 'desc' = 'asc') {

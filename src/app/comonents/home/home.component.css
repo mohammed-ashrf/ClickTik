@@ -62,9 +62,26 @@
 }
 
 .category input[type="radio"] {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #41CCCC;
+    border-radius: 8px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
     margin-right: 10px;
-    border-color: #41CCCC;
+}
+
+.category input[type="radio"]:checked::before {
+    content: "";
+    width: 5.25px;
+    height: 5.25px;
     background-color: #41CCCC;
+    border-radius: 8px;
+    position: absolute;
+    top: 4.38px;
+    left: 4.38px;
 }
 
 .category label {

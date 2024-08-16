@@ -10,12 +10,12 @@
             <h2>Products</h2>
             <div class="categories">
                 <div class="category">
-                    <input type="radio" name="select-Category" id="select-All" (click)="viewAllProducts()" />
-                    <label for="select-All">All</label>
+                    <input type="radio" name="select-Category" id="select-All" [value]="null" [(ngModel)]="selectedCategory" (click)="viewAllProducts()" />
+                    <label for="select-All">All ({{allProducts}})</label>
                 </div>
                 <div class="category" *ngFor="let category of categories">
-                    <input type="radio" name="select-Category" [id]="category" (click)="getProductsByCategory(category)" />
-                    <label [for]="category">{{ category }}</label>
+                    <input type="radio" name="select-Category" [id]="category" [value]="category" [(ngModel)]="selectedCategory" (click)="getProductsByCategory(category)" />
+                    <label [for]="category">{{ category }} ({{categoryCounts[category]}})</label>
                 </div>
             </div>
         </div>
