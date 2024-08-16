@@ -63,8 +63,7 @@
 }
 .email input {
     width: 100%;
-    border-width: 1px;
-    border-color: #D0D5DD;
+    border: 1px solid #D0D5DD;
     border-radius: 8px;
     padding: 10px 14px 10px 14px;
 }
@@ -83,9 +82,8 @@
 }
 .password input {
     width: 100%;
-    border-width: 1px;
+    border: 1px solid #D0D5DD;
     border-radius: 8px;
-    border-color: #D0D5DD;
     padding: 10px 14px 10px 14px;
 }
 
@@ -136,7 +134,7 @@ input:-ms-input-placeholder {
 #sign-in {
     width: 360px;
     height: 44px;
-    border-width: 1px;
+    border: 1px solid #41cccc;
     border-radius: 8px;
     padding: 10px 18px 10px 18px;
     background-color: #41cccc;
