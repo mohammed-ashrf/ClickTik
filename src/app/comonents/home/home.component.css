@@ -38,7 +38,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 25px;
+    gap: 145px;
 }
 
 .category-list {
@@ -91,7 +91,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;    
-    margin: 22px;
+    margin-bottom: 22px;
 }
 .search-filter .sort-by {
     font-weight: 600;
