@@ -4,6 +4,15 @@
     min-height: 100vh;
 }
 
+app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
 router-outlet {
+    padding-top: 80px;
     flex: 1;
 }
