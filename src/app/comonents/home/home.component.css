@@ -270,6 +270,7 @@
     height: 30px;
     background-color: #ffffff;
     border: 0.1px solid #30375014;
+    cursor: pointer;
 }
 .page-numbers {
     display: flex;
