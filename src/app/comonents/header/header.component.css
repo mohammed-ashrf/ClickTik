@@ -55,6 +55,33 @@
     font-size: 16px;
     transition: border-color 0.3s ease;
 }
+
+/* Chrome, Safari, Edge */
+.search input[type="text"]:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+    background-image: url('../../../assets/search.svg') !important;
+    background-repeat: no-repeat !important;
+    background-position: 10px center !important;
+    background-size: 24px !important;
+}
+  
+/* Firefox */
+.search input[type="text"]:-moz-autofill {
+    box-shadow: 0 0 0 30px white inset;
+    background-image: url('../../../assets/search.svg') !important;
+    background-repeat: no-repeat !important;
+    background-position: 10px center !important;
+    background-size: 24px !important;
+}
+
+/* Other browsers */
+.search input[type="text"]:-ms-autofill {
+    box-shadow: 0 0 0 30px white inset;
+    background-image: url('../../../assets/search.svg') !important;
+    background-repeat: no-repeat !important;
+    background-position: 10px center !important;
+    background-size: 24px !important;
+}
 .cart {
     margin: 0px 15px 0px 15px;
 }
