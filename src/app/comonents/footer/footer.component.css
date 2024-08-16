@@ -4,19 +4,17 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    background-color:#1D2939;
-    position: fixed;
-    bottom: 0;
-    padding: 48px 0px 48px 0px;
+    background-color: #1D2939;
+    padding: 48px 0;
+    margin-top: 150px;
 }
-
-.container .logo {
+  
+.logo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 5px;
 }
-
 
 .logo p {
     color: #ffffff;

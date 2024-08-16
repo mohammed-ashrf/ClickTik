@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: calc(100vh - (80px + 299px));
 }
 
 .header {
